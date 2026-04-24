@@ -1,7 +1,9 @@
 from flask import Flask, request, send_from_directory, jsonify
+from flask_cors import CORS
 import os
 
 app = Flask(__name__)
+CORS(app)
 
 # Carpeta para almacenar archivos
 UPLOAD_FOLDER = "uploads"
